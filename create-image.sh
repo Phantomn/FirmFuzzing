@@ -16,7 +16,7 @@ if [ -z ${ADD_PACKAGE+x} ]; then
 fi
 
 # Variables affected by options
-ARCH=mipsel
+ARCH=$(uname -m)
 RELEASE=stretch
 FEATURE=minimal
 SEEK=1023
