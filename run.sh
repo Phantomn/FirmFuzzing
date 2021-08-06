@@ -1,9 +1,10 @@
 #!/bin/sh
 
-qemu-system-mipsel -hda ./stretch.img -M malta -kernel ./vmlinux-4.9.0-13-4kc-malta \
-		   -initrd ./initrd.gz \
- 		   -append "quite root=/dev/sda1 console=tty0 nokaslr" -nographic 
-#		   -netdev user,id=net0,hostfwd=tcp::2022-:22,hostfwd=tcp::2080-:80 -device virtio-net,netdev=net0 \
-#		   -nographic
-#qemu-system-x86_64 -kernel bzImage -append "quiet console=ttyS0 root=/dev/sda" -hda ./stretch.img -nographic -m 2G -smp 2 -s
-
+qemu-system-mipsel -M malta \
+ -m 256 -hda hda.img \
+ -kernel vmlinux-4.19.0-17-4kc-malta \
+ -initrd initrd.img-4.19.0-17-4kc-malta \
+ -append "root=/dev/sda1 console=ttyS0 nokaslr" \
+ -device e1000-82545em,netdev=net0 \
+ -netdev user,id=net0,hostfwd=tcp::5555-:22 \
+ -nographic 
