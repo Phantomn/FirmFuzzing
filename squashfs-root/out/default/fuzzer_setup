@@ -1,0 +1,5 @@
+# environment variables:
+AFL_KILL_SIGNAL=9
+AFL_PATH=/home/fuzz/AFLplusplus
+# command line:
+'afl-fuzz' '-m' 'none' '-i' 'in' '-o' 'out' '-Q' '--' '../set'

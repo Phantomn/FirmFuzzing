@@ -1,0 +1,16 @@
+run=0
+ssid=iptime BAND STEERING
+region=korea
+broadcast_ssid=on
+auth_type=open
+encrypt_type=off
+passphrase=
+auto_key=on
+default_key=1
+key_input_method=string
+wepkey1=
+wepkey2=
+wepkey3=
+wepkey4=
+wpapsk_key=
+wl_mode=999

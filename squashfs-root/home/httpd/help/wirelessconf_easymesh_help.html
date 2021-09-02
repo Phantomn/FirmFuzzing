@@ -1,0 +1,96 @@
+<span class="item_string ">
+<UL TYPE="square">
+
+<LI><b>ipTIME EasyMesh</b>
+        <UL>
+        <LI> ipTIME EasyMesh는 여러 대의 AP를 통합적으로 관리 운영할 수 있는 방법을 제공합니다. 
+        <LI> ipTIME EasyMesh망은 한개의 Controller와 다수의 Agent들로 구성됩니다. 
+        <LI> Agent는 유선/무선을 통해 망에 연결이 가능합니다.
+        <LI> 모든 설정은 콘트롤러를 통해 통합적으로 이루어집니다. 
+        <LI> 기본적으로 모든 Agent는 한개의 무선네트워크 이름을 사용합니다. 
+        <LI> 필요에 따라 특정 Agent의 무선네트워크이름을 다르게 설정할 수도 있습니다. 
+	<LI><a href="http://download.iptime.co.kr/online_upgrade.mesh/iptime_mesh_launcher_setup.exe"><span style="color:blue">[ ipTIME Mesh 접속기 ]</span></a> 를 사용하면 손쉽게 초기 설정을 할 수 있습니다.
+	</UL>
+<br>
+<LI><b>설정 페이지</b>
+        <UL>
+        <LI> 한개의 메쉬 네트워크에서는 한대의 콘트롤러만 존재해야합니다.  
+        <LI> 콘트롤러는 인터넷에 WAN포트롤 연결된 공유기로 설정하기를 권장합니다. 
+        <LI> 설정된 네트워크 이름/암호는 모든 Agent들과 공유합니다.
+        <LI> 암호를 입력하지 않으면, 망접속시 암호가 필요없는 공개된 메쉬망을 구성할 수 있습니다.
+        <LI> 2.4GHz 옵션
+	<UL>
+        	<LI> 통합사용 : 2.4GHz 와 5GHz 두개의 대역에서 동일한 네트워크 이름을 사용하여 망을 구성합니다.
+        	<LI> 2.4GHz 무선 분리사용:  2.4GHz 망이름을 분리합니다. 2.4GHz네트워크 이름은 [무선 네트워크 이름+ _2G]로 설정됩니다.
+        	<LI> 2.4GHz 무선 끄기 :  5GHz 대역 전용 망을 구성합니다.
+	</UL>
+        <LI> 게스트 네트웍스 
+	<UL>
+        	<LI> 중단 : 게스트네트워크를 사용하지 않습니다.
+        	<LI> 사용함: 게스트 네트워크를 사용하며, 접속된 사용자에게 모든 통신이 허용됩니다.
+        	<LI> 인터넷만 허용: 게스트 네트워크를 사용하며, 접속된 사용자는 인터넷만 사용가능합니다. 
+	</UL>
+        <LI> 내부IP주소/서브넷 마스크: 콘트롤러의 내부IP를 변경합니다. (내부 IP를 변경하면, 유선 Agent 추가시 IP충돌을을 방지할 수 있습니다.)
+	</UL>
+
+<br>
+<LI><b><span style="color:blue"><h3>EasyMesh 관리툴</h3></span></b>
+        <LI> <b>망구성도</b>
+        	<UL>
+		<LI> 최상단은 공유기는 콘트롤러 입니다.(연두색 줄)
+		<LI> 콘트롤러 하단의 공유기는 모두 AGENT 입니다.
+		<LI> 유선 연결은 실선으로 표기됩니다.
+		<LI> 무선 연결은 점선으로 표기됩니다.
+        	</UL>
+
+        <LI> <b>Agent추가하기</b>
+		<UL>
+		<LI> Agent로 사용할 AP의 전원을 켭니다. 
+		<UL>
+			<LI> 유선으로 망에 연결할 경우, Agent의 LAN포트와 콘트롤러 또는 기연결된 Agent의 LAN포트를 연결합니다.
+
+			<UL><LI> 유선으로 망에 연결할 경우, 콘트롤러와의 IP충돌에 유의하십시오.
+			    <LI> IP충돌을 손쉽게 해결하기위해 <a href="http://download.iptime.co.kr/online_upgrade.mesh/iptime_mesh_launcher_setup.exe"><span style="color:blue">[ ipTIME Mesh 접속기 ]</span></a> 를 사용할 수 있습니다. </UL>
+			<LI> 무선으로 망에 연결할 경우, Agent를 콘트롤러와 가까운 곳에 가져다 놓아야 합니다. 
+		</UL>
+		<LI> [ 연결가능한 ipTIME 검색 ] 버튼을 클릭합니다.
+		<LI> 검색된 AP는 [추가 가능]으로 표시됩니다.  
+		<LI> 검색된 AP를 클릭한 후 상단의 이름을 설정 후, [추가] 버튼을 클릭합니다.
+		<LI> 무선연결 사용 시, Agent로 사용될 AP의 WPS버튼을 누릅니다. 
+		<UL><LI> 이후 WPS연결과정은 마법사를 통해 진행됩니다. </UL>
+		<LI> [추가 가능] AP가 검색되지 않을 경우 
+			<UL>
+				<LI>해당 AP가  ipTIME Easymesh를 지원하는지 확인하십시오 
+				<LI>해당 AP의 펌웨어가 ipTIME Easymesh를 지원하는 최신 버전으로 업그레이드 되어있는지 확인 하십시오.
+				<LI><a href="http://download.iptime.co.kr/online_upgrade.mesh/iptime_mesh_launcher_setup.exe"><span style="color:blue">[ ipTIME Mesh 접속기 ]</span></a> 를 사용하면 손쉽게 업그레이드를 진행할 수 있습니다. 
+			</UL>
+		</UL>
+
+        <LI> <b>Agent 설정</b>
+		<UL>
+		<LI> 연결된 Agent의 아이콘을 클릭하면, Agent설정 화면이 나타납니다. 
+		<LI> 연결된 Agent의 이름을 지정할 수 있습니다. 
+		<LI> Agent의 실시간 트래픽양을 볼 수 있습니다.
+		<LI> 연결된 Agent의 IP를 지정할 수 있습니다. 
+		<LI> 해당 Agent만 무선 네트워크 이름/암호를  별도로 지정할 수 있습니다. 
+		<LI> [LED 점멸] 을 누르면, 해당 Agent의  무선LED(2.4GHz/5GHz)가 빠르게 점멸합니다. 
+		<LI> [속도측정] 버튼을 통해 연결된 콘트롤러/Agent간의 속도를 측정할 수 있습니다. 
+		<LI> 무선으로 Agent가 망에 연결된 경우,   [Backhaul 재검색] 을 누르면 최적의 Agent를 찾아 망에 다시 연결합니다. 
+		</UL>
+        <LI> <b>스테이션 정보보기</b>
+		<UL>
+		<LI> 연결된 스테이션의 아이콘을 클릭하면, 스테이션 정보 보기 화면이 나타납니다. 
+		<LI> 연결된 스테이션의 이름을 지정할 수 있습니다.
+		<LI> 연결된 스테이션의 실시간 통계정보를 볼 수 있습니다. 
+		<LI> 무선 스테이션일 경우, 다른 Agent로 연결을 수동으로 변경할 수 있습니다.
+		</UL>
+
+        <LI> <b>펌웨어 업그레이드</b>
+		<UL>
+		<LI> 콘트롤러 또는 연결된 공유기를 클릭합니다.
+		<LI> 우측 상단의 [펌웨어업그레이드] 버튼을 클릭합니다. 
+		<LI> 최신 펌웨어가 배포되었다면, 엄그레이드를 계속 진행할 수 있습니다.
+		<LI> 업그레이드 진행시, 모든 공유기의 펌웨어가 최신버전으로 한번에 업그레이드 됩니다.
+		</UL>
+
+</span>

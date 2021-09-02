@@ -17,7 +17,6 @@ void main(int argc, char* argv[]){
 	printf("%s\n",s);
 
 	setenv("QUERY_STRING", s, 1);
-	setenv("REQUEST_METHOD", "GET", 1);	
-	execv("/cgibin/timepro.cgi", NULL, environ);
-
+	setenv("REQUEST_METHOD", "POST", 1);	
+	execv("./squashfs-root/cgibin/timepro.cgi", NULL, environ);
 }

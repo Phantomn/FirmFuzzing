@@ -1,0 +1,8 @@
+name=ipTIME A6004MX
+company=EFM Networks
+url=www.iptime.co.kr 
+type=wireless_router
+vendor=efm
+easymesh.support_type=3
+easymesh.support_role=3
+
